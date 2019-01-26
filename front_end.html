@@ -1,0 +1,45 @@
+<head>
+<title>Style Placement</title>
+<style>
+
+body{
+  background: linear-gradient(to bottom, #33ccff 0%, #ffffcc 80%)
+}
+h1 {
+  color: red;
+  font-family: "italic";
+  text-align: center; 
+}
+
+h3 {
+  text-align: center; 
+}
+</style>
+</head>
+
+<div id="map"></div>
+<h1>
+<div> Real Estate Securities </div>
+</h1>
+ <h3>"Demo for NSBEHacks"
+<div>
+<input type="text" placeholder="Please Enter Coordinates" class="search" onkeydown="search(this)"/> 
+</div> </h3>  
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&callback=initMap">
+</script>
+
+
+<script>
+	var config = {
+    apiKey: "AIzaSyBYAc9Pzg2lQPVO_9-nhe1mSzcvMBCREQU",
+    authDomain: "projectId.firebaseapp.com",
+    databaseURL: "https://property-securities.firebaseio.com",
+    storageBucket: "bucket.appspot.com"
+  };
+  firebase.initializeApp(config);
+	//Incomplete 
+  // Get a reference to the database service
+  var database = firebase.database();
+</script>
